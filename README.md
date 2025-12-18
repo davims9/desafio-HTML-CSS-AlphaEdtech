@@ -6,30 +6,51 @@ Este projeto é um portfólio pessoal moderno e responsivo, desenvolvido como um
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📂 Estrutura do Projeto
 
-* **HTML5 Semântico:** Uso de tags como `<nav>`, `<section>`, `<header>` e `<footer>` para melhor acessibilidade e SEO.
-* **CSS3 Moderno:** * **Variáveis CSS (Custom Properties):** Facilitam a manutenção de cores e fontes em todo o projeto.
-    * **Flexbox & CSS Grid:** Utilizados para criar layouts complexos e garantir a centralização perfeita de elementos.
-    * **Media Queries:** Garantem que o site seja totalmente responsivo, adaptando-se de desktops a dispositivos móveis.
-* **Figma:** Utilizado para o protótipo de alta fidelidade, definição de grids de 12 colunas e componentes.
+A organização dos arquivos foi estruturada de forma modular para facilitar a manutenção e expansão do portfólio:
+
+* **`index.html`**: Arquivo principal da página.
+* **`css/`**: Contém o arquivo `style.css` com todas as estilizações, variáveis e media queries.
+* **`img/`**: Pasta destinada ao armazenamento de imagens globais do site.
+* **`projects/`**: Subdiretórios organizados para cada projeto individual (`project1`, `project2`, `project3`), permitindo uma separação clara de ativos e códigos específicos de cada item do portfólio.
+
+---
+
+## 🛠️ Tecnologias & Ferramentas
+
+### Tecnologias
+* **HTML5 Semântico**: Estruturação focada em acessibilidade e SEO.
+* **CSS3 Moderno**: Uso de **Variáveis (Custom Properties)**, **Flexbox** e **CSS Grid** para layouts dinâmicos e centralização precisa.
+* **Media Queries**: Implementação de responsividade para garantir a usabilidade em dispositivos móveis e desktops.
+
+### Ferramentas de Desenvolvimento
+* **Figma**: Planejamento de UI, prototipagem de alta fidelidade e definição de grids de 12 colunas.
+* **Antigravity**: Ambiente de desenvolvimento utilizado para a escrita e edição do código.
+* **Google Chrome**: Navegador utilizado para visualização em tempo real e depuração via DevTools.
+* **IA (Gemini)**: Auxílio técnico para correção de bugs de layout, refatoração de código CSS e estruturação desta documentação.
 
 ---
 
 ## 🎨 Escolhas de Design & Processos
 
-### 1. Identidade Visual (Cores e Tons)
-O projeto utiliza uma paleta de cores **Dark Mode** para transmitir modernidade e reduzir o cansaço visual:
-* **Background Principal:** `#121212` (Cinza quase preto) para profundidade.
-* **Cor de Destaque:** `#FF9F1C` (Laranja) para botões de ação (CTA) e elementos importantes, criando um contraste vibrante.
-* **Tipografia:** Mix entre 'Space Grotesk' para títulos (caráter tecnológico) e 'Inter' para o corpo (foco em legibilidade).
+### 1. Identidade Visual
+* **Dark Mode**: Base em `#121212` para um visual sóbrio e moderno.
+* **Contraste**: Uso estratégico do laranja (`#FF9F1C`) para destacar elementos de interação e guiar o olhar do usuário.
 
-### 2. Processo de "Linha de Montagem" no Figma
-Para garantir a organização e escalabilidade, o design foi construído seguindo o conceito de seções verticais:
-* Uso de **Auto Layout** no Figma para manter espaçamentos consistentes e automáticos entre os elementos.
-* Implementação de **Layout Grids** centralizados para garantir que o conteúdo não se perca em telas largas.
+### 2. UX e Responsividade
+* **Auto Layout**: No Figma, permitiu que os componentes se ajustassem automaticamente, agilizando a "linha de montagem" do design.
+* **Ajuste Mobile**: Refatoração do CSS para que elementos de grid se empilhem verticalmente, mantendo a centralização e evitando o transbordamento lateral (overflow) em telas menores.
 
-### 3. Experiência do Usuário (UX) e Responsividade
-* **Navegação:** O topo do site permanece visível durante a rolagem para facilitar o acesso.
-* **Microinterações:** Efeitos de `hover` nos cards e botões com transições suaves para feedback visual.
-* **Ajuste Mobile:** No celular, os elementos da grade (About e Projetos) se empilham verticalmente para evitar o transbordamento lateral (overflow) e manter a centralização.
+---
+
+## 🚀 Como visualizar o projeto localmente
+
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/davims9/desafio-HTML-CSS-AlphaEdtech.git](https://github.com/davims9/desafio-HTML-CSS-AlphaEdtech.git)
+    ```
+2.  Abra o arquivo `index.html` em seu navegador.
+
+---
+Desenvolvido por **Davi Moura Souza** — Aspirante Alpha Edtech.
