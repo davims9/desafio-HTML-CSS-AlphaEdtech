@@ -13,6 +13,12 @@
     --border-radius: 12px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -348,8 +354,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .nav-links {
-        display: none;
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
     }
 
     .about-grid {
@@ -363,5 +376,26 @@ footer {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .about-grid,
+    .career-grid,
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-image {
+        max-width: 90% !important;
+        transform: rotate(0deg);
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1.5rem;
     }
 }
