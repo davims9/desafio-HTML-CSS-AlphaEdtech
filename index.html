@@ -1,14 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Questão </title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML e CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <script src="js/script.js"></script>
-    </body>
+<body>
+    <nav class="nav">
+        <div class="container nav-content">
+            <span class="logo">DMS.</span>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#career">Carreira</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <header class="hero">
+            <div class="container hero-content animate-up">
+                <h1>Davi Moura Souza</h1>
+                <h2>Aspirante Alpha Edtech</h2>
+                <p>Desenvolvedor apaixonado por criar soluções inovadoras e eficientes, sempre estudando para poder
+                    construir
+                    interfaces amigáveis e acessíveis.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#about" class="btn btn-outline">Saiba mais</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+
+                <div class="about-grid animate-on-scroll">
+                    <div class="about-image-container">
+                        <img src="img/minha-foto.png" alt="Foto de Davi Moura Souza" class="about-image">
+                    </div>
+
+                    <div class="card about-text">
+                        <h3>Minha Jornada</h3>
+                        <p>
+                            Sou apaixonado por tecnologia e ao longo da minha trajetória atuei em diferentes áreas de
+                            desenvolvimento e análise de sistemas, passando por empresas de saúde, tecnologia e agro,
+                            sempre buscando criar soluções eficientes e impactantes. Minha experiência inclui desde
+                            suporte técnico até desenvolvimento de software e análise de requisitos, com foco em
+                            sistemas ERP e integração de ferramentas.
+                        </p>
+                        <p>
+                            Agora, iniciei uma nova etapa no Alpha Edtech,
+                            onde estou aprimorando meus conhecimentos em HTML, CSS e outras tecnologias para expandir
+                            minhas habilidades e contribuir ainda mais com projetos inovadores.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Carreira & Skills</h2>
+                <div class="career-grid">
+                    <article class="card animate-on-scroll">
+                        <h3>Hard Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML5 Semântico</li>
+                            <li>CSS3 & Animações</li>
+                            <li>Git & Github</li>
+                            <li>UI/UX Design Básico</li>
+                            <li>Responsividade</li>
+                        </ul>
+                    </article>
+                    <article class="card animate-on-scroll">
+                        <h3>Soft Skills</h3>
+                        <ul class="skills-list">
+                            <li>Comunicação Efetiva</li>
+                            <li>Resolução de Problemas</li>
+                            <li>Trabalho em Equipe</li>
+                            <li>Aprendizado Contínuo</li>
+                            <li>Atenção aos Detalhes</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Portfólio</h2>
+                <div class="project-grid">
+
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/project1/index.html" target="_blank" class="card-link-wrapper">
+                            <div class="project-image">
+                                <img src="img/thumb-proj1.png" alt="Preview do Projeto 1">
+                            </div>
+                            <div class="project-info">
+                                <h3></h3>
+                                <p>
+                                    Exercicio de JavaScript para consulta via API e montagem com Iframe
+                                </p>
+                                <span class="link-text">Ver Projeto &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/project2/index.html" target="_blank" class="card-link-wrapper">
+                            <div class="project-image">
+                                <img src="img/thumb-proj2.png" alt="Preview do Projeto 2">
+                            </div>
+                            <div class="project-info">
+                                <h3></h3>
+                                <p>
+                                    Exercicio de CSS para utilização de Felxbox
+                                </p>
+                                <span class="link-text">Ver Projeto &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card animate-on-scroll">
+                        <a href="projects/project3/index.html" target="_blank" class="card-link-wrapper">
+                            <div class="project-image">
+                                <img src="img/thumb-proj3.png" alt="Preview do Projeto 3">
+                            </div>
+                            <div class="project-info">
+                                <h3></h3>
+                                <p>
+                                    Montagem de pagina utilizando JavaScript
+                                </p>
+                                <span class="link-text">Ver Projeto &rarr;</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Davi Moura Souza. Desenvolvido para o Desafio Relâmpago Alpha Edtech.</p>
+            <div class="social-links">
+                <a href="https://github.com/davims9" target="_blank">Github</a>
+                <a href="https://linkedin.com/in/davi-moura/" target="_blank">Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
