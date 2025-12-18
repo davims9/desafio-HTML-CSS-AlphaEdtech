@@ -23,3 +23,65 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
 }
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* topo de navegação */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom: 1px solid #333;
+    padding: 1.5rem 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
